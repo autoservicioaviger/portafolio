@@ -32,16 +32,18 @@
     padding: 48px 20px 40px;
     text-align: center;
   }
-  header h1 {
-    margin: 0 0 8px;
-    font-size: 2rem;
+  header .brand-tag {
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #9fc4bf;
+    margin-bottom: 10px;
   }
-  header p {
-    margin: 0;
-    font-size: 1.05rem;
-    color: #cfe0dd;
-    max-width: 560px;
+  header h1 {
     margin: 0 auto;
+    font-size: 1.7rem;
+    max-width: 640px;
+    line-height: 1.35;
   }
 
   /* ===== Secciones generales ===== */
@@ -76,6 +78,8 @@
   .si-no .si { background: var(--light); }
   .si-no .no { background: #f6f0ee; }
   .si-no h3 { margin-top: 0; font-size: 1rem; }
+  .si-no ul { margin: 0; padding-left: 18px; }
+  .si-no li { margin-bottom: 6px; font-size: 0.95rem; color: #333; }
 
   /* ===== Caja de demo (placeholder, se completa después) ===== */
   .demo-box {
@@ -138,10 +142,10 @@
 </head>
 <body>
 
-  <!-- 1) Header: quién soy y qué ofrezco -->
+  <!-- 1) Header: la oferta en una frase, se entiende sin scrollear -->
   <header>
-    <h1>JulIA Soluciones con IA</h1>
-    <p>Ayudo a almacenes y autoservicios a que WhatsApp deje de comerles el día.</p>
+    <div class="brand-tag">JulIA Soluciones con IA</div>
+    <h1>Que WhatsApp conteste solo lo de siempre — horarios, precios y stock — mientras vos atendés el mostrador.</h1>
   </header>
 
   <!-- 2) Presentación: quién soy y qué ofrezco (versión completa) -->
@@ -156,11 +160,19 @@
     <div class="si-no">
       <div class="si">
         <h3>Sí, si...</h3>
-        <p>Texto placeholder: tu WhatsApp se llena todos los días con las mismas preguntas.</p>
+        <ul>
+          <li>Tu WhatsApp se llena todos los días con las mismas preguntas de horarios, precios o stock.</li>
+          <li>Atendés solo o con poco personal y no llegás a responder rápido.</li>
+          <li>Ya usás WhatsApp Business, o estás dispuesto a empezar a usarlo.</li>
+        </ul>
       </div>
       <div class="no">
         <h3>No, si...</h3>
-        <p>Texto placeholder: todavía no usás WhatsApp para atender clientes.</p>
+        <ul>
+          <li>Todavía no usás WhatsApp para atender clientes.</li>
+          <li>Preferís responder cada mensaje vos mismo, personalmente.</li>
+          <li>Tu negocio casi no recibe consultas repetidas por chat.</li>
+        </ul>
       </div>
     </div>
   </section>
