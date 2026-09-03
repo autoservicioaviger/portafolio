@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<!-- Que se vea bien en el celular -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JulIA Soluciones con IA</title>
+<style>
+  /* ===== Variables de color y tipografía ===== */
+  :root {
+    --navy: #1f3b57;
+    --teal: #1d7a73;
+    --light: #eaf2f1;
+    --gray: #5a5a5a;
+    --bg: #fbfbfa;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    color: #222;
+    background: var(--bg);
+    line-height: 1.5;
+  }
+
+  /* ===== Encabezado ===== */
+  header {
+    background: var(--navy);
+    color: #fff;
+    padding: 48px 20px 40px;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0 0 8px;
+    font-size: 2rem;
+  }
+  header p {
+    margin: 0;
+    font-size: 1.05rem;
+    color: #cfe0dd;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  /* ===== Secciones generales ===== */
+  section {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    border-bottom: 1px solid #e2e2e2;
+  }
+  section h2 {
+    color: var(--teal);
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+  section p {
+    margin: 0 0 12px;
+    color: #333;
+  }
+
+  /* ===== Sección "Para quién sí / no" ===== */
+  .si-no {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .si-no div {
+    flex: 1 1 240px;
+    padding: 16px;
+    border-radius: 8px;
+  }
+  .si-no .si { background: var(--light); }
+  .si-no .no { background: #f6f0ee; }
+  .si-no h3 { margin-top: 0; font-size: 1rem; }
+
+  /* ===== Caja de demo (placeholder, se completa después) ===== */
+  .demo-box {
+    background: var(--light);
+    border: 2px dashed var(--teal);
+    border-radius: 8px;
+    padding: 40px 16px;
+    text-align: center;
+    color: var(--gray);
+  }
+
+  /* ===== Lista de pasos ===== */
+  ol.pasos {
+    padding-left: 20px;
+  }
+  ol.pasos li {
+    margin-bottom: 10px;
+  }
+
+  /* ===== Preguntas frecuentes ===== */
+  .faq-item {
+    margin-bottom: 16px;
+  }
+  .faq-item .pregunta {
+    font-weight: bold;
+    color: var(--navy);
+    margin-bottom: 4px;
+  }
+
+  /* ===== Botón / CTA final ===== */
+  .cta {
+    text-align: center;
+    padding: 48px 20px 64px;
+  }
+  .cta h2 {
+    color: var(--navy);
+  }
+  .btn-reunion {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 14px 32px;
+    background: var(--teal);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  .btn-reunion:hover { opacity: 0.9; }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--gray);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+
+  <!-- 1) Header: quién soy y qué ofrezco -->
+  <header>
+    <h1>JulIA Soluciones con IA</h1>
+    <p>Ayudo a almacenes y autoservicios a que WhatsApp deje de comerles el día.</p>
+  </header>
+
+  <!-- 2) Presentación: quién soy y qué ofrezco (versión completa) -->
+  <section id="presentacion">
+    <h2>Quién soy y qué ofrezco</h2>
+    <p>Texto placeholder: acá va la presentación de una página armada el Día 1 — quién soy, a quién ayudo, qué problema le saco y qué le entrego.</p>
+  </section>
+
+  <!-- 3) Para quién sí / para quién no -->
+  <section id="para-quien">
+    <h2>¿Es esto para tu negocio?</h2>
+    <div class="si-no">
+      <div class="si">
+        <h3>Sí, si...</h3>
+        <p>Texto placeholder: tu WhatsApp se llena todos los días con las mismas preguntas.</p>
+      </div>
+      <div class="no">
+        <h3>No, si...</h3>
+        <p>Texto placeholder: todavía no usás WhatsApp para atender clientes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4) Demo (antes y después) - hoy va vacía, se completa otro día -->
+  <section id="demo">
+    <h2>Mirá cómo cambia</h2>
+    <div class="demo-box">
+      Acá va la demo (antes / después). Se completa más adelante.
+    </div>
+  </section>
+
+  <!-- 5) Cómo trabajo, paso a paso -->
+  <section id="como-trabajo">
+    <h2>Así lo armamos</h2>
+    <ol class="pasos">
+      <li>Texto placeholder: me pasás tus horarios, precios y preguntas más repetidas.</li>
+      <li>Texto placeholder: en pocos días tenés el asistente funcionando en tu WhatsApp.</li>
+    </ol>
+  </section>
+
+  <!-- 6) Cómo se arma un presupuesto (sin precios) -->
+  <section id="presupuesto">
+    <h2>¿Cuánto sale?</h2>
+    <p>Texto placeholder: el presupuesto se arma a medida de tu negocio. Lo conversamos en una reunión de 20 minutos, después de ver la demo.</p>
+  </section>
+
+  <!-- 7) Preguntas frecuentes -->
+  <section id="faq">
+    <h2>Preguntas frecuentes</h2>
+    <div class="faq-item">
+      <div class="pregunta">¿Esto reemplaza a la persona que atiende?</div>
+      <div>Texto placeholder: no, la ayuda con lo repetitivo.</div>
+    </div>
+    <div class="faq-item">
+      <div class="pregunta">¿Qué pasa si no sabe responder algo?</div>
+      <div>Texto placeholder: deriva la consulta directo a vos.</div>
+    </div>
+  </section>
+
+  <!-- 8) CTA final: botón para agendar reunión de 20 minutos -->
+  <div class="cta">
+    <h2>Charlemos 20 minutos</h2>
+    <p>Te muestro la demo funcionando con un ejemplo parecido a tu negocio.</p>
+    <!-- El link real del botón se agrega más adelante -->
+    <button class="btn-reunion" type="button">Agendá una reunión de 20 minutos</button>
+  </div>
+
+  <footer>
+    JulIA Soluciones con IA
+  </footer>
+
+</body>
+</html>
