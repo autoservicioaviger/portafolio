@@ -17,12 +17,18 @@
 
   * { box-sizing: border-box; }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     margin: 0;
     font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
     color: #222;
     background: var(--bg);
-    line-height: 1.5;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   /* ===== Encabezado ===== */
@@ -72,8 +78,9 @@
   }
   .si-no div {
     flex: 1 1 240px;
-    padding: 16px;
-    border-radius: 8px;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
   }
   .si-no .si { background: var(--light); }
   .si-no .no { background: #f6f0ee; }
@@ -95,8 +102,9 @@
   .demo-col {
     flex: 1 1 260px;
     background: var(--light);
-    border-radius: 8px;
-    padding: 14px;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
   }
   .demo-col h4 {
     margin: 0 0 10px;
@@ -177,7 +185,12 @@
 
   /* ===== Preguntas frecuentes ===== */
   .faq-item {
-    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
   }
   .faq-item .pregunta {
     font-weight: bold;
@@ -205,14 +218,48 @@
     font-size: 1rem;
     border: none;
     cursor: pointer;
+    transition: opacity 0.15s ease, transform 0.15s ease;
   }
-  .btn-reunion:hover { opacity: 0.9; }
+  .btn-reunion:hover { opacity: 0.9; transform: translateY(-1px); }
 
   footer {
     text-align: center;
     padding: 20px;
     color: var(--gray);
     font-size: 0.85rem;
+  }
+
+  /* ===== Ajustes para celular: que se vea bien en pantallas chicas ===== */
+  @media (max-width: 480px) {
+    header {
+      padding: 36px 16px 30px;
+    }
+    header h1 {
+      font-size: 1.35rem;
+    }
+    section {
+      padding: 32px 16px;
+    }
+    section h2 {
+      font-size: 1.25rem;
+    }
+    .demo-widget {
+      gap: 12px;
+    }
+    .chip {
+      width: 100%;
+      padding: 10px 14px;
+      min-height: 44px;
+    }
+    .btn-reunion {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 14px 20px;
+    }
+    .cta {
+      padding: 40px 16px 52px;
+    }
   }
 </style>
 </head>
